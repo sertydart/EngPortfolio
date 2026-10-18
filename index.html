@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniil — Portfolio</title>
+  <meta name="description" content="Daniil's portfolio: websites, Telegram bots, infographics and posters.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="Daniil — back to top"><img src="images/logo.png" alt="Daniil logo" width="51" height="50"></a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#works">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--light" href="#contact">Get in touch</a>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. HERO: curved 3D cylinder loop -->
+    <section class="hero">
+      <div class="hero__copy">
+        <a class="badge" href="#works">New work just added <span aria-hidden="true">→</span></a>
+        <h1 class="hero__title">
+          <span class="hero__line">Make your website</span>
+          <span class="hero__line hero__line--fade">unique.</span>
+        </h1>
+        <p class="hero__sub">My portfolio:</p>
+      </div>
+
+      <div class="cylinder-wrap">
+        <div class="cylinder" data-cylinder aria-hidden="true">
+          <div class="cylinder__stage" data-cylinder-stage></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SCROLL: perspective tilt card -->
+    <section class="scroll-section" id="showcase">
+      <div class="scroll-section__header" data-scroll-header>
+        <h2>Every project tells its own story</h2>
+        <p>Pick a project to view it larger.</p>
+      </div>
+
+      <div class="scroll-stage" data-scroll-stage>
+        <div class="scroll-card" data-scroll-card>
+          <div class="scroll-card__bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="scroll-card__url" data-card-title>Project</span>
+          </div>
+          <div class="scroll-card__screen">
+            <img data-card-image alt="">
+          </div>
+          <div class="scroll-card__thumbs" data-card-thumbs role="tablist" aria-label="Select a project"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section class="section" id="services">
+      <div class="section__head">
+        <h2>Services</h2>
+        <p>What I do for clients.</p>
+      </div>
+      <div class="services reveal-grid">
+        <article class="service reveal">
+          <div class="service__img service__img--light"><img src="images/service-bots.jpg" alt="Telegram bots" loading="lazy" style="object-position: 50% 28%"></div>
+          <div class="service__body">
+            <h3>Telegram Bots</h3>
+            <p>I build Telegram bots for businesses: taking bookings and requests, product catalogs, payments, broadcasts, and auto-replies. Your bot works 24/7 and takes routine tasks off your plate.</p>
+            <ul class="tags"><li>Bookings &amp; requests</li><li>Payments</li><li>Broadcasts</li></ul>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="images/service-infographics.jpg" alt="Infographic" loading="lazy"></div>
+          <div class="service__body">
+            <h3>Infographics</h3>
+            <p>Complex data becomes a clear, great-looking visual story that's a pleasure to read.</p>
+            <ul class="tags"><li>Structure</li><li>Visuals</li><li>Storytelling</li></ul>
+          </div>
+        </article>
+        <article class="service reveal">
+          <div class="service__img"><img src="images/service-posters.jpg" alt="Landing page website" loading="lazy"></div>
+          <div class="service__body">
+            <h3>Landing Pages</h3>
+            <p>One-page websites that sell: a strong first screen, clear structure, smooth animations, and an easy way to reach you. Looks great on phones and desktops.</p>
+            <ul class="tags"><li>Design</li><li>Development</li><li>Launch</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. GALLERY: all works, grouped -->
+    <section class="works" id="works">
+      <div class="works__head">
+        <h2>My Work</h2>
+        <p>Click any project to see the details.</p>
+      </div>
+      <div data-gallery></div>
+    </section>
+
+    <!-- 5. ABOUT ME -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2>About Me</h2>
+        <p>The person behind this work.</p>
+      </div>
+      <div class="about reveal">
+        <div class="about__art" data-tilt>
+          <img class="about__eagle" src="images/eagle.png" alt="Daniil's eagle emblem" width="560" height="500">
+        </div>
+        <div class="about__body">
+          <h3>Hi, I'm Daniil</h3>
+          <p>I build websites and Telegram bots for businesses. I like sites that don't look like templates: they have personality, motion, and a clear goal — turning visitors into customers.</p>
+          <p>I work directly with clients, no middlemen: we talk through what you need, I show you options, take the project all the way to launch, and stay available afterward.</p>
+          <ul class="tags"><li>Websites</li><li>Telegram bots</li><li>Infographics</li><li>Posters</li></ul>
+          <a class="btn btn--light about__cta" href="#contact">Discuss a project</a>
+          <a class="btn btn--ghost about__cta" href="https://t.me/PahanCrypty77" target="_blank" rel="noopener noreferrer">My Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Have a project in mind?</h2>
+      <p>Tell me what you need and I'll get back to you soon.</p>
+      <div class="contact__links">
+        <a class="btn btn--light" href="mailto:seveneurooo@gmail.com">seveneurooo@gmail.com</a>
+        <a class="btn btn--ghost" href="https://t.me/PahanCrypty77" target="_blank" rel="noopener noreferrer">Message me on Telegram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="lightbox" data-lightbox aria-label="Project viewer">
+    <button class="lightbox__btn lightbox__close" type="button" data-lightbox-close aria-label="Close">×</button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lightbox-prev aria-label="Previous">‹</button>
+    <img class="lightbox__img" data-lightbox-img alt="">
+    <button class="lightbox__btn lightbox__next" type="button" data-lightbox-next aria-label="Next">›</button>
+    <p class="lightbox__caption" data-lightbox-caption></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
